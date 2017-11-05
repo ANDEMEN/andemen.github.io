@@ -1,0 +1,22 @@
+language: node_js
+dist: trusty
+node_js:
+  - "8"
+install:
+  - npm install hexo-cli -g
+  - npm install
+script:
+  - hexo clean
+  - hexo g
+after_script:
+  - cd ./public
+  - git init
+  - git config --global push.default matching
+  - git config --global user.email "${GitHubEMail}"
+  - git config --global user.name "${GitHubUser}"
+  - git add --all .
+  - git commit -m "Auto Builder of ${GitHubUser}'s Blog"
+  - git push --quiet --force https://${GitHubKEY}@github.com/${GitHubUser}/${GitHubRepo}.git master
+branches:
+  only:
+    - raw
