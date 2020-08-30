@@ -4,9 +4,9 @@
 
 # Head info
 head:
-  favicon: "//cdn.wudibaozha.cn/img/whale.png"
-  high_res_favicon: "//cdn.wudibaozha.cn/img/whale.png"
-  apple_touch_icon: "//cdn.wudibaozha.cn/img/whale.png"
+  favicon: "//cdn.jsdelivr.net/gh/ANDEMEN/andemen.github.io/img/whale.png"
+  high_res_favicon: "//cdn.jsdelivr.net/gh/ANDEMEN/andemen.github.io/img/whale.png"
+  apple_touch_icon: "//cdn.jsdelivr.net/gh/ANDEMEN/andemen.github.io/img/whale.png"
   keywords: 前端,编程,博客,心得
   site_verification:
     google:
